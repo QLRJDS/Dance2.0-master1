@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/people_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="房间人数"/>
+
+    <RadioGroup
+        android:id="@+id/num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/people_num"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/num1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="100人"
+            />
+        <RadioButton
+            android:id="@+id/num2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="200人"
+            />
+        <RadioButton
+            android:id="@+id/num3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="300人"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/room_time"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/num"
+        android:layout_marginTop="10dp"
+        android:text="房间时长"/>
+
+
+    <Button
+        android:id="@+id/decrease"
+        android:layout_height="25dp"
+        android:layout_width="25dp"
+        android:background="@drawable/add_button"
+        android:layout_below="@+id/room_time"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="-"
+        />
+    <EditText
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/room_time"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/decrease"
+        android:layout_marginLeft="20dp"
+        android:text="1"
+        android:textSize="20dp"
+         />
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/room_time"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/time"
+        android:layout_marginLeft="20dp"
+        android:text="小时"
+        android:textSize="20dp"/>
+    <Button
+        android:id="@+id/add"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_toRightOf="@+id/time"
+        android:layout_marginLeft="70dp"
+        android:background="@drawable/add_button"
+        android:layout_below="@+id/room_time"
+        android:layout_marginTop="20dp"
+        android:text="+" />
+    <Button
+        android:id="@+id/confirm"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@drawable/add_button"
+        android:text="创建房间"
+        android:layout_below="@+id/time"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!--接收方头像及消息-->
+    <ImageView
+        android:id="@+id/Header"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:contentDescription="Description"
+        android:src="@drawable/head1"/>
+    <TextView
+        android:id="@+id/From_Content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/chat_left"
+        android:gravity="center"
+        android:textIsSelectable="false"
+        android:layout_below="@+id/name"
+        android:layout_toRightOf="@+id/Header"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="50dp"/>
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hahahahahhaah"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="50dp"
+        android:layout_alignTop="@+id/Header"
+        android:layout_toRightOf="@+id/Header"
+        />
+</RelativeLayout> 

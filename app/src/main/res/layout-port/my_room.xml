@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:example="http://schemas.android.com/apk/res-auto">
+    <!--包含顶部音乐条的房间聊天页-->
+    <RelativeLayout
+        android:id="@+id/room_num"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:padding="10dp">
+        <Button
+            android:id="@+id/back_to_room"
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            android:background="@mipmap/back"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="房间1234"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <!--分割线
+    <View
+        android:id="@+id/div_bar"
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:layout_below="@+id/room_num"
+        android:background="@color/colorPrimaryDark" />-->
+    <!--顶部音乐控件-->
+    <RelativeLayout
+        android:id="@+id/music_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:clickable="true"
+        android:layout_below="@+id/room_num"
+        android:background="@drawable/bar"
+        >
+        <!--音乐图片-->
+        <ImageView
+            android:id="@+id/music_img"
+            android:layout_margin="10dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@mipmap/music"
+            android:layout_centerVertical="true"
+            />
+        <!--音乐名称-->
+        <TextView
+            android:id="@+id/music_name"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/music_img"
+            android:text="歌曲名"
+            android:textSize="18dp"
+            android:layout_centerVertical="true"
+            />
+        <!--自定义按钮控件，有播放、暂停两种状态-->
+        <com.example.danceapp.dance.ChangeButton
+            android:id="@+id/music_control_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            example:play="@mipmap/play"
+            example:stop="@mipmap/stop"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="94dp">
+        </com.example.danceapp.dance.ChangeButton>
+
+        <Button
+            android:id="@+id/last"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/last"
+            android:layout_marginRight="20dp"
+            android:layout_alignTop="@+id/next"
+            android:layout_toStartOf="@+id/music_control_btn"
+            android:layout_marginEnd="35dp" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/next"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="35dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <!--分割线-->
+    <View
+        android:id="@+id/div_chat_bar"
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:layout_above="@+id/chat_bar"
+        android:background="@color/colorPrimaryDark" />
+
+    <!--底部，进行聊天输入、发送-->
+    <LinearLayout
+        android:id="@+id/chat_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <!--输入框-->
+        <EditText
+            android:id="@+id/InputBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:layout_marginLeft="5dp"
+            android:layout_alignBottom="@+id/BtnSend"
+            android:textColor="@color/colorPrimaryDark"
+            android:inputType="text" />
+
+        <!--发送按钮                  <requestFocus />-->
+        <Button
+            android:id="@+id/BtnSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="8dp"
+            android:text="发送"
+            android:background="@drawable/add_button"
+            android:textColor="@color/colorPrimaryDark"/>
+
+    </LinearLayout>
+
+    <!--聊天信息-->
+    <ListView
+        android:id="@+id/chatList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#ffffff"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/music_bar"
+        android:layout_above="@+id/div_chat_bar">
+    </ListView>
+
+</RelativeLayout>

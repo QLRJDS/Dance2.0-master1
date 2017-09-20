@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="vertical"
+    android:fadingEdge="vertical">
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 推荐区域 -->
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBright"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <!-- 显示文字“推荐” -->
+            <RelativeLayout
+                android:id="@+id/tuijian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tuijian"
+                    android:textColor="@color/text"
+                    android:textSize="16dp"
+                    />
+                <ImageView
+                    android:id="@+id/iv1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@mipmap/enter"
+                    />
+            </RelativeLayout>
+
+            <!-- 点击图片播放视频 -->
+            <ImageView
+                android:id="@+id/vptuijian"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="180dp"
+                android:background="@mipmap/p2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="视频1的名字"
+                android:layout_below="@+id/iv1"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/text"
+                android:textSize="14dp"
+                />
+        </LinearLayout>
+
+        <!-- 分割线-->
+        <View
+            android:id="@+id/va1"
+            android:layout_width="match_parent"
+            android:layout_height="10px"
+            android:background="@color/colorWhite" />
+
+        <!-- 健身操区域-->
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBright"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/jianshencao"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jianshencao"
+                    android:textColor="@color/text"
+                    android:textSize="16dp" />
+                <ImageView
+                    android:id="@+id/iv2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@mipmap/enter"
+                    />
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/vpjianshencao"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@mipmap/p1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="视频2的名字"
+                android:layout_below="@+id/iv2"
+                android:textColor="@color/text"
+                android:textSize="14dp"
+                />
+
+        </LinearLayout>
+        <!-- 分割线-->
+        <View
+            android:id="@+id/va2"
+            android:layout_width="match_parent"
+            android:layout_height="10px"
+            android:background="@color/colorWhite" />
+        <!-- 民族舞区域-->
+        <LinearLayout
+            android:id="@+id/ll3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBright"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/minzuwu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/minzuwu"
+                    android:textColor="@color/text"
+                    android:textSize="16dp" />
+                <ImageView
+                    android:id="@+id/iv3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@mipmap/enter"
+                    />
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/vpminzuwu"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="5dp"
+                android:background="@mipmap/p2"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="视频3的名字"
+                android:layout_below="@+id/iv1"
+                android:textColor="@color/text"
+                android:textSize="14dp"
+                />
+
+        </LinearLayout>
+
+        <!-- 分割线-->
+        <View
+            android:id="@+id/va3"
+            android:layout_width="match_parent"
+            android:layout_height="10px"
+            android:background="@color/colorWhite" />
+
+        <!-- 街舞区域-->
+        <LinearLayout
+            android:id="@+id/ll4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBright"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/jiewu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jiewu"
+                    android:textColor="@color/text"
+                    android:textSize="16dp" />
+                <ImageView
+                    android:id="@+id/iv4"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@mipmap/enter"
+                    />
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/vpjiewu"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="5dp"
+                android:background="@mipmap/p1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:text="视频4的名字"
+                android:layout_below="@+id/iv1"
+                android:textColor="@color/text"
+                android:textSize="14dp"
+                />
+
+        </LinearLayout>
+        <!-- 分割线-->
+        <View
+            android:id="@+id/va4"
+            android:layout_width="match_parent"
+            android:layout_height="10px"
+            android:background="@color/colorWhite" />
+        <!-- 现代舞区域 -->
+        <LinearLayout
+            android:id="@+id/ll5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBright"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/xiandaiwu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/xiandaiwu"
+                    android:textColor="@color/text"
+                    android:textSize="16dp" />
+                <ImageView
+                    android:id="@+id/iv5"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@mipmap/enter"
+                    />
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/vpxiandaiwu"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="5dp"
+                android:background="@mipmap/p2"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="视频5的名字"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/iv1"
+                android:textColor="@color/text"
+                android:textSize="14dp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

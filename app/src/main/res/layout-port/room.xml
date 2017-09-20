@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ly_room"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <!--加入房间-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加入房间"
+            android:textSize="20dp"
+            android:textColor="@color/colorDarkGray"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorPrimaryDark"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp">
+            <EditText
+
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/add_button"
+                android:hint="请输入房间号"/>
+
+            <Button
+                android:id="@+id/enterroom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/confirm_bt"
+                android:text="加入房间"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--创建房间-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="创建房间"
+            android:textSize="20dp"
+            android:textColor="@color/colorDarkGray"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/colorPrimaryDark"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="房间人数"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"/>
+        <RadioGroup
+            android:id="@+id/num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp">
+            <RadioButton
+                android:id="@+id/num1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="100人"
+                android:textSize="16dp"
+                />
+            <RadioButton
+                android:id="@+id/num2"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="200人"
+                android:textSize="16dp"
+                />
+            <RadioButton
+                android:id="@+id/num3"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="300人"
+                android:textSize="16dp"
+                />
+
+        </RadioGroup>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:text="房间时长"
+            android:textSize="18dp"
+            android:layout_marginLeft="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="5dp">
+            <Button
+                android:id="@+id/decrease"
+                android:layout_height="25dp"
+                android:layout_width="25dp"
+                android:background="@drawable/add_button"
+                android:layout_below="@+id/room_time"
+                android:text="-"
+                android:textColor="@color/colorPrimary"
+                />
+            <EditText
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="1"
+                android:textSize="16dp"
+                />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="小时"
+                android:textSize="16dp"/>
+            <Button
+                android:id="@+id/add"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/add_button"
+                android:text="+"
+                android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/newroom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="创建房间"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@drawable/confirm_bt"
+            android:textSize="18dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+    </LinearLayout>
+
+</LinearLayout>

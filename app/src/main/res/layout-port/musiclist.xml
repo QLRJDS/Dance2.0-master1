@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@+id/music_list"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:padding="10dp">
+        <Button
+            android:id="@+id/back_to_room"
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            android:background="@mipmap/back"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/music_list"
+            android:textSize="18dp"
+            android:layout_centerInParent="true"
+            android:id="@+id/textView" />
+        <Button
+            android:id="@+id/search"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:background="@mipmap/search1"
+            android:layout_alignTop="@+id/textView"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    <View
+        android:id="@+id/va1"
+        android:layout_width="match_parent"
+        android:layout_height="10px"
+        android:background="@color/colorPrimaryDark" />
+    <Button
+        android:id="@+id/add_song"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:hint="添加">
+
+    </Button>
+    <!--音乐列表-->
+    <ListView
+        android:id="@+id/my_music_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#ffffff"
+        android:layout_below="@+id/va1">
+    </ListView>
+</LinearLayout>
